@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Frontend Mentor | [By Đỗ Doãn Vũ]</title>
+
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="phone" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    <header>
+      <div class="container">
+        <div class="header-right">
+          <a href="#" class="arrow arrow-left"></a>
+          <img src="./images/avatar.jpg" alt="" />
+          <div class="user-infor">
+            <h2>Đỗ Doãn Vũ</h2>
+            <span>Available to Walk</span>
+          </div>
+        </div>
+        <a href="#" class="dots"></a>
+      </div>
+    </header>
+    <main>
+      <p class="chat-left">That sounds great. I’d be happy with that.</p>
+      <p class="chat-left">Could you send over some pictures of your dog, please?</p>
+      <div class="chat-img chat-right">
+        <img src="./images/dog-image-1.jpg" alt="" class="dog-img"/>
+        <img src="./images/dog-image-2.jpg" alt="" class="dog-img"/>
+        <img src="./images/dog-image-3.jpg" alt="" class="dog-img"/>
+      </div>
+      <p class="chat-right">Here are a few pictures. She’s a happy girl!</p>
+      <p class="chat-right">Can you make it?</p>
+  
+      <p class="chat-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      <label for="check" class="chat-left check">
+        <div class="check-right">
+          <div id="check"></div>
+          <span>30 minute walk</span>
+        </div>
+        <strong>$29</strong>
+      </label>
+      <label for="check1" class="chat-left check1">
+        <div class="check-right">
+          <div id="check1"></div>
+          <span>1 hour walk</span>
+        </div>
+        <strong>$49</strong>
+      </label>
+      <div class="button">
+        <input type="text" placeholder="Type a message…">
+        <a href="#" class="button-submit">
+          <div class="arrow"></div>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <footer data-aos="zoom-in-left">
+      <h1>Simple booking</h1>
+      <div class="text">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+    discuss arrangements and make bookings. Once the walk has been completed you can rate 
+    your walker and book again all through the chat.
+      </div>
+    
+  </footer>
+</div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+
+  AOS.init({
+
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 300, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease-out-cubic', // default easing for AOS animations
+  });
+</script>
+</body>
+</html>
